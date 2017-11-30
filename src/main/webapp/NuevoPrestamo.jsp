@@ -13,24 +13,20 @@
                 margin-bottom: 0;
                 border-radius: 0;
             }
-
             /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
             .row.content {height: 450px}
-
             /* Set gray background color and 100% height */
             .sidenav {
                 padding-top: 20px;
                 background-color: #f1f1f1;
                 height: 100%;
             }
-
             /* Set black background color, white text and some padding */
             footer {
                 background-color: #555;
                 color: white;
                 padding: 15px;
             }
-
             /* On small screens, set height to 'auto' for sidenav and grid */
             @media screen and (max-width: 767px) {
                 .sidenav {
@@ -55,24 +51,55 @@
                     <p></p>
                     <hr>
                     <div class="container">   
-                        <form class="form-inline" action="Prestamoo" method="POST">                        
+                        <form class="form-inline" action="Prestamoo" method="POST">
                             <div class="form-group">
-                                <label for="tipo">Activo:</label>
-                                <select class="form-control" name="Activo">
-                                    <%
-                                        if (request.getAttribute("activos") != null) {
-                                            ArrayList<Activo> array = (ArrayList<Activo>) request.getAttribute("activos");
-                                            for (Activo a : array) {
-                                    %> 
-                                    <option value="<%=a.getTipo()%>"><%=a.getTipo()%>"</option> 
-                                    <%      }
-                                        }
-                                    %> 
-                                </select>   
-                                <br> 
-
+                                <label for="fecha_entrada">Fecha Entrada:</label>
+                                <input class="form-control" name="fecha_entrada">
                             </div>
-
+                            <div class="form-group">
+                                <label for="fecha_salida">Fecha Salida:</label>
+                                <input  class="form-control" name="fecha_salida">
+                            </div>
+                          <div class="form-group">
+                                    <label for="tipo">Tipo</label>
+                                    <select class="form-control" name="tipo">
+                                        <option>Interno</option>
+                                        <option>Externo</option>
+                                    </select>
+                                </div>
+                            <div class="span12">&nbsp;</div>
+                            <div class="form-group">
+                                <label for="activo1">Activo 1:</label>
+                                <input  class="form-control" name="activo1">
+                               
+                                <div class="form-group">
+                                    <label for="activo2">Activo 2:</label>
+                                    <input  class="form-control" name="activo2">
+                                </div>
+                                   <div class="form-group">
+                                    <label for="activo3">Activo 3:</label>
+                                    <input  class="form-control" name="activo3">
+                                </div>
+                                
+                                   <div class="form-group">
+                                    <label for="activo4">Activo 4:</label>
+                                    <input  class="form-control" name="activo4">
+                                </div>
+                                <div class="span12">&nbsp;</div>
+                                   <div class="form-group">
+                                    <label for="activo5">Activo 5:</label>
+                                    <input  class="form-control" name="activo5">
+                                </div>
+                                 
+                                   <div class="form-group">
+                                    <label for="id_solicitante">ID Solicitante:</label>
+                                    <input  class="form-control" name="id_solicitante">
+                                </div>
+                                 
+                                   <div class="form-group">
+                                    <label for="id_trabajador">ID Trabajador:</label>
+                                    <input  class="form-control" name="id_trabajador">
+                                </div>
                                 <br>
                                 <div class="span12">&nbsp;</div>
                                 <button type="submit" class="btn btn-default">Enviar</button>
