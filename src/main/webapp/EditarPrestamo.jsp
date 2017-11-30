@@ -55,7 +55,7 @@
 
                 </div>
                 <div class="col-sm-8 text-left"> 
-                    <h1>Editar Activo</h1>
+                    <h1>Editar Prestamo</h1>
                     <p></p>
                     <hr>
                     <div class="container">   
