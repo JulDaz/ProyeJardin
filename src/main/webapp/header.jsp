@@ -10,14 +10,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="inicio.jsp">Inicio</a></li>
-                        <li><a href="Prestamoo">Prestamos</a></li>
-                        <li><a href="Activoo">Activos</a></li>
-                        <li><a href="Solicitantee">Solicitante</a></li>
-                        <li><a href="Auxiliarr">Auxiliar</a></li>
-                        <li><a href="Supervisorr">Supervisor</a></li>
-                        <li><a href="Categoriaa">Categoria</a></li>
-                        <li><a href="MantenimientoPreventivos">Mantenimiento Preventivo</a></li>
+                        <li class="nav-item"><a href="inicio.jsp">Inicio</a></li>
+                        <li class="nav-item"><a href="Prestamoo">Prestamos</a></li>
+                        <li class="nav-item"><a href="Activoo">Activos</a></li>
+                        <li class="nav-item"><a href="Solicitantee">Solicitante</a></li>
+                        <li class="nav-item"><a href="Auxiliarr">Auxiliar</a></li>
+                        <li class="nav-item"><a href="Supervisorr">Supervisor</a></li>
+                        <li class="nav-item"><a href="Categoriaa">Categoria</a></li>
+                        <li class="nav-item"><a href="MantenimientoPreventivos">Mantenimiento Preventivo</a></li>
                     </ul>
 
                 </div>
