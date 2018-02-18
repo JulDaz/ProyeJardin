@@ -33,7 +33,6 @@
                         </div>
 
                         <br>
-                        <div class="span12">&nbsp;</div>
 
                         <button  onclick="Listar()"  class="btn btn-default" name="Enviar">Buscar</button>
 
