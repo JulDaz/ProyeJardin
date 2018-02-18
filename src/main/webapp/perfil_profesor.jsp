@@ -36,9 +36,9 @@
 
                         <button  onclick="Listar()"  class="btn btn-default" name="Enviar">Buscar</button>
 
-                        <div id="profesor">
+                        <p id="profesor">
                             
-                        </div>
+                        </p>
                     </div>
 
                 </div>
