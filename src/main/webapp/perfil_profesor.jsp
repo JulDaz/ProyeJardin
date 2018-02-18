@@ -29,19 +29,19 @@
                             <p></p>
                             <div class="form-group">
                                 <label for="nombre_profesor">Nombre:</label>
-                                <input  class="form-control" name="nombre_profesor">
+                                <input  class="form-control" name="nombre_profesor" readonly="readonly">
                             </div>
                             <div class="form-group">
                                 <label for="descripcion">Usuario:</label>
-                                <input  class="form-control" name="descripcion_profesor">
+                                <input  class="form-control" name="descripcion_profesor" readonly="readonly">
                             </div>
                             <div class="form-group">
                                 <label for="descripcion_profesor">Descripcion:</label>
-                                <input  class="form-control" name="descripcion_profesor">
+                                <input  class="form-control" name="descripcion_profesor" readonly="readonly">
                             </div>
                             <div class="form-group">
                                 <label for="contato_profesor">Contacto:</label>
-                                <input  class="form-control" name="contacto_profesor">
+                                <input  class="form-control" name="contacto_profesor" readonly="readonly">
                             </div>
                             
                         </form>
