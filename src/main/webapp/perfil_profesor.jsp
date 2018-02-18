@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">                       <!-- Bootstrap style, http://v4-alpha.getbootstrap.com/ -->
         <link rel="stylesheet" href="css/templatemo-style.css">                    <!-- Templatemo style -->
         <script src="js/funciones.js"></script>
+        <script rel="javascript" type="text/javascript" href="js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
 
