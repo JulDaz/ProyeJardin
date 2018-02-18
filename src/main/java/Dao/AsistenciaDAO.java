@@ -19,13 +19,13 @@ import util.DbUtil;
  * @author anfeg
  */
 public class AsistenciaDAO {
-    
-       private Connection connection;
+
+    private Connection connection;
 
     public AsistenciaDAO() throws SQLException, URISyntaxException {
         connection = DbUtil.getConnection();
     }
-    
+
     public ArrayList<Asistencia> getAsistenciaID(int a) throws SQLException, URISyntaxException {
         ArrayList<Asistencia> asistencia = null;
         boolean result = false;
@@ -40,18 +40,17 @@ public class AsistenciaDAO {
             int id_curso = 0;
             int id_estudiante = 0;
             String fecha = null;
-            boolean vino = false; 
-        
-           
+            boolean vino = false;
+
             while (rs.next()) {
                 if (asistencia == null) {
                     asistencia = new ArrayList<Asistencia>();
                 }
-                Asistencia registro = new  Asistencia(id_asistencia, fecha, vino, id_curso, id_estudiante);
-                
+                Asistencia registro = new Asistencia(id_asistencia, fecha, vino, id_curso, id_estudiante);
+
                 id_asistencia = rs.getInt("id_asistencia");
                 registro.setId_asistencia(id_asistencia);
-                
+
                 id_curso = rs.getInt("id_curso");
                 registro.setId_curso(id_curso);
 
@@ -69,7 +68,7 @@ public class AsistenciaDAO {
             }
             if (asistencia != null) {
                 for (int i = 0; i < asistencia.size(); i++) {
-                    System.out.println(asistencia.get(i).getId_asistencia()+ " " + asistencia.get(i).getId_curso()+ " " + asistencia.get(i).getId_estudiante()+ " " + asistencia.get(i).getFecha() + " " + asistencia.get(i).getVino());
+                    System.out.println(asistencia.get(i).getId_asistencia() + " " + asistencia.get(i).getId_curso() + " " + asistencia.get(i).getId_estudiante() + " " + asistencia.get(i).getFecha() + " " + asistencia.get(i).getVino());
                 }
             }
             st.close();
@@ -82,5 +81,5 @@ public class AsistenciaDAO {
         return asistencia;
 
     }
-    
+
 }
