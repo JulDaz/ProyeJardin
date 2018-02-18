@@ -1,3 +1,5 @@
+<%@page import="Model.Profesor"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,28 +25,61 @@
                     <h1>Perfil Profesor</h1>
                     <p></p>
 
-                    <div class="container">   
-                        <form>
-                            <button type="button" class="btn btn-default" name="Enviar">Consultar</button>
-                            <p></p>
+                    <div class="container">  
+
+
+
+                        <form class="form-inline" action="BuscarProfesor" method="GET">
+
                             <div class="form-group">
-                                <label for="nombre_profesor">Nombre:</label>
-                                <input  class="form-control" name="nombre_profesor" readonly="readonly">
+                                <label for="idequipo">Id Profesor:</label>
+                                <input  class="form-control" name="id_profesor">
                             </div>
-                            <div class="form-group">
-                                <label for="descripcion">Usuario:</label>
-                                <input  class="form-control" name="descripcion_profesor" readonly="readonly">
-                            </div>
-                            <div class="form-group">
-                                <label for="descripcion_profesor">Descripcion:</label>
-                                <input  class="form-control" name="descripcion_profesor" readonly="readonly">
-                            </div>
-                            <div class="form-group">
-                                <label for="contato_profesor">Contacto:</label>
-                                <input  class="form-control" name="contacto_profesor" readonly="readonly">
-                            </div>
+                <%                    
+                           int id_profesor = (String) request.getAttribute("id_profesor");
+                           
+                        %>
+                            <br>
+                            <div class="span12">&nbsp;</div>
+                            <button onclick="window.location.href = 'BuscarProfesor?id_profesor=<%=id_profesor()%>'" class="btn btn-info">Buscar</button>                              
 
                         </form>
+
+                
+
+                 
+                            
+                            <% if (request.getAttribute("listaProfesorBuscar") != null) {
+                                    ArrayList<Profesor> list = (ArrayList<Profesor>) request.getAttribute("listaProfesorBuscar");
+                                    if (list != null)
+                                        for (Profesor profesor : list) {
+                            %>
+                           
+                              
+
+                            
+              
+                        <div class="form-group">
+                            <label for="nombre_profesor">Nombre:</label>
+                            <input  class="form-control" name="nombre_profesor" readonly="readonly" value="<%=profesor.getNombre_profesor()%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion">Usuario:</label>
+                            <input  class="form-control" name="descripcion_profesor" readonly="readonly" value="<%=profesor.getUsuario_profesor()%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion_profesor">Descripcion:</label>
+                            <input  class="form-control" name="descripcion_profesor" readonly="readonly" value="<%=profesor.getDescripcion_profesor()%>">
+                        </div>
+                        <div class="form-group">
+                            <label for="contato_profesor">Contacto:</label>
+                            <input  class="form-control" name="contacto_profesor" readonly="readonly" value="<%=profesor.getContacto_profesor()%>">
+                        </div>
+                        <% }
+                                }
+                            %>
+
+
                     </div>
 
                 </div>

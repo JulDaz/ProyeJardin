@@ -101,6 +101,28 @@
         <servlet-name>EliminarMantenimientoPreventivos</servlet-name>
         <url-pattern>/EliminarMantenimientoPreventivos</url-pattern>
     </servlet-mapping>
+    
+    
+    
+    
+  <servlet>
+        <servlet-name>BuscarProfesor</servlet-name>
+        <servlet-class>Controller.BuscarProfesor</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>BuscarProfesor</servlet-name>
+        <url-pattern>/BuscarProfesor</url-pattern>
+    </servlet-mapping>  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet-mapping>
         <servlet-name>AnadirMantenimientoPreventivos</servlet-name>
         <url-pattern>/AnadirMantenimientoPreventivos</url-pattern>
