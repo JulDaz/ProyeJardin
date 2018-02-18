@@ -32,7 +32,7 @@
                         <form class="form-inline" action="BuscarProfesor" method="GET">
 
                             <div class="form-group">
-                                <label for="idequipo">Id Profesor:</label>
+                                <label for="idequipo">ID Profesor:</label>
                                 <input  class="form-control" name="id_profesor">
                             </div>
 
