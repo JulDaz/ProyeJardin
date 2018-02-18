@@ -6,18 +6,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="inicio.jsp">Laboratorio</a>
+                    <a class="navbar-brand" href="inicio.jsp">IngSoftw</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"><a href="inicio.jsp">Inicio</a></li>
-                        <li class="nav-item"><a href="Prestamoo">Prestamos</a></li>
-                        <li class="nav-item"><a href="Activoo">Activos</a></li>
-                        <li class="nav-item"><a href="Solicitantee">Solicitante</a></li>
-                        <li class="nav-item"><a href="Auxiliarr">Auxiliar</a></li>
-                        <li class="nav-item"><a href="Supervisorr">Supervisor</a></li>
-                        <li class="nav-item"><a href="Categoriaa">Categoria</a></li>
-                        <li class="nav-item"><a href="MantenimientoPreventivos">Mantenimiento Preventivo</a></li>
+                        <li class="nav-item"><a href="">####</a></li>
+                        <li class="nav-item"><a href="">####</a></li>
+                        <li class="nav-item"><a href="">####</a></li>
+                        <li class="nav-item"><a href="">####</a></li>
+                        <li class="nav-item"><a href="">####/a></li>
+                        <li class="nav-item"><a href="">####</a></li>
+                        <li class="nav-item"><a href="">####</a></li>
+                        <li class="nav-item"><a href="">####</a></li>
                     </ul>
 
                 </div>

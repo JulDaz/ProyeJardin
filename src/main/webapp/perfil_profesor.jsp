@@ -22,10 +22,11 @@
                 <div class="col-sm-8 text-left"> 
                     <h1>Perfil Profesor</h1>
                     <p></p>
-                    <hr>
+                   
                     <div class="container">   
                         <form>
                             <button type="button" class="btn btn-default" name="Enviar">Consultar</button>
+                            <p></p>
                             <div class="form-group">
                                 <label for="nombre_profesor">Nombre:</label>
                                 <input  class="form-control" name="nombre_profesor">
@@ -35,12 +36,12 @@
                                 <input  class="form-control" name="descripcion_profesor">
                             </div>
                             <div class="form-group">
-                                <label for="descripcion">Descripcion:</label>
+                                <label for="descripcion_profesor">Descripcion:</label>
                                 <input  class="form-control" name="descripcion_profesor">
                             </div>
                             <div class="form-group">
-                                <label for="descripcion">Contacto:</label>
-                                <input  class="form-control" name="descripcion_profesor">
+                                <label for="contato_profesor">Contacto:</label>
+                                <input  class="form-control" name="contacto_profesor">
                             </div>
                             
                         </form>
