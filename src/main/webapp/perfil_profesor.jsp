@@ -20,40 +20,32 @@
 
                 </div>
                 <div class="col-sm-8 text-left"> 
-                    <h1>Login</h1>
+                    <h1>Perfil Profesor</h1>
                     <p></p>
                     <hr>
                     <div class="container">   
-                        <form class="form-inline" action="Loginn" method="POST">
+                        <form>
+                            <button type="button" class="btn btn-default" name="Enviar">Consultar</button>
                             <div class="form-group">
-                                <label for="idequipo">Usuario:</label>
-                                <input  class="form-control" name="usuario">
+                                <label for="nombre_profesor">Nombre:</label>
+                                <input  class="form-control" name="nombre_profesor">
                             </div>
                             <div class="form-group">
-                                <label for="nombre">Contrasena:</label>
-                                <input  class="form-control" name="contrasena">
+                                <label for="descripcion">Usuario:</label>
+                                <input  class="form-control" name="descripcion_profesor">
                             </div>
-                            <button type="submit" class="btn btn-default" name="Enviar">Enviar</button>
+                            <div class="form-group">
+                                <label for="descripcion">Descripcion:</label>
+                                <input  class="form-control" name="descripcion_profesor">
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Contacto:</label>
+                                <input  class="form-control" name="descripcion_profesor">
+                            </div>
+                            
                         </form>
                     </div>
-                    <div class="row"> 
-
-                        <section class="tm-section-intro">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div class="tm-wrapper-center">
-                                    <h1 class="tm-section-intro-title">Bienvenido</h1>
-                                    <p><a class="tm-btn-white-big" href="ReporteSer" role="button">Consultar</a></p>
-                                </div>            
-                            </div>
-                        </section>    
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <p class="text-xs-center tm-copyright-text">Óscar Romero © (2017)</p>
-                        </div>
-                    </div>
+                 
                 </div>
 
             </div>
