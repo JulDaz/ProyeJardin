@@ -13,7 +13,7 @@
     </head>
     <body>
 
-<%@include file="header.jsp" %>
+        <%@include file="header.jsp" %>
         <div class="container-fluid text-center">    
             <div class="row content">
                 <div class="col-sm-2 sidenav">
@@ -22,7 +22,7 @@
                 <div class="col-sm-8 text-left"> 
                     <h1>Perfil Profesor</h1>
                     <p></p>
-                   
+
                     <div class="container">   
                         <form>
                             <button type="button" class="btn btn-default" name="Enviar">Consultar</button>
@@ -43,15 +43,15 @@
                                 <label for="contato_profesor">Contacto:</label>
                                 <input  class="form-control" name="contacto_profesor" readonly="readonly">
                             </div>
-                            
+
                         </form>
                     </div>
-                 
+
                 </div>
 
             </div>
         </div>
-
+        <p></p>
         <footer class="container-fluid text-center">
             <p>Universidad Sergio Arboleda</p>
         </footer>
