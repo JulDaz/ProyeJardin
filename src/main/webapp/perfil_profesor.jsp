@@ -35,30 +35,27 @@
                                 <label for="idequipo">Id Profesor:</label>
                                 <input  class="form-control" name="id_profesor">
                             </div>
-                <%                    
-                           int id_profesor = (String) request.getAttribute("id_profesor");
-                           
-                        %>
+
                             <br>
                             <div class="span12">&nbsp;</div>
-                            <button onclick="window.location.href = 'BuscarProfesor?id_profesor=<%=id_profesor()%>'" class="btn btn-info">Buscar</button>                              
 
+                            <button type="submit" class="btn btn-default" name="Enviar">Buscar</button>
                         </form>
 
-                
 
-                 
-                            
-                            <% if (request.getAttribute("listaProfesorBuscar") != null) {
-                                    ArrayList<Profesor> list = (ArrayList<Profesor>) request.getAttribute("listaProfesorBuscar");
-                                    if (list != null)
-                                        for (Profesor profesor : list) {
-                            %>
-                           
-                              
 
-                            
-              
+
+
+                        <% if (request.getAttribute("listaProfesorBuscar") != null) {
+                                ArrayList<Profesor> list = (ArrayList<Profesor>) request.getAttribute("listaProfesorBuscar");
+                                if (list != null)
+                                    for (Profesor profesor : list) {
+                        %>
+
+
+
+
+
                         <div class="form-group">
                             <label for="nombre_profesor">Nombre:</label>
                             <input  class="form-control" name="nombre_profesor" readonly="readonly" value="<%=profesor.getNombre_profesor()%>">
@@ -77,7 +74,7 @@
                         </div>
                         <% }
                                 }
-                            %>
+                        %>
 
 
                     </div>
