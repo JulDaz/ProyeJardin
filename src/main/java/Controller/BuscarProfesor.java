@@ -48,7 +48,22 @@ public class BuscarProfesor extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
+       
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+   
+         try {
                               
             ProfesorDAO obj = new ProfesorDAO();
             int id_profesor = Integer.parseInt(request.getParameter("id_profesor"));
@@ -64,20 +79,6 @@ public class BuscarProfesor extends HttpServlet {
         } catch (URISyntaxException ex) {
             Logger.getLogger(BuscarProfesor.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-   
     }
 
     /**

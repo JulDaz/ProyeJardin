@@ -29,7 +29,7 @@
 
 
 
-                        <form class="form-inline" action="BuscarProfesor" method="GET">
+                        <form class="form-inline" action="BuscarProfesor" method="POST">
 
                             <div class="form-group">
                                 <label for="idequipo">ID Profesor:</label>
@@ -84,9 +84,7 @@
             </div>
         </div>
         <p></p>
-        <footer class="container-fluid text-center">
-            <p>Universidad Sergio Arboleda</p>
-        </footer>
+    
 
     </body>
 </html>
