@@ -33,27 +33,10 @@
                                 <label for="nombre">Contrasena:</label>
                                 <input  class="form-control" name="contrasena">
                             </div>
-                            <button type="submit" class="btn btn-default" name="Enviar">Enviar</button>
+                            <button type="submit" class="btn btn-default" name="Enviar">Ingresar</button>
                         </form>
                     </div>
-                    <div class="row"> 
-
-                        <section class="tm-section-intro">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div class="tm-wrapper-center">
-                                    <h1 class="tm-section-intro-title">Bienvenido</h1>
-                                    <p><a class="tm-btn-white-big" href="ReporteSer" role="button">Consultar</a></p>
-                                </div>            
-                            </div>
-                        </section>    
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <p class="text-xs-center tm-copyright-text">Óscar Romero © (2017)</p>
-                        </div>
-                    </div>
+                    
                 </div>
 
             </div>
