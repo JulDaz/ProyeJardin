@@ -14,6 +14,34 @@
     <body>
 
 <%@include file="header.jsp" %>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script>
+            function iniciarsesion(correo, clave) {
+                var parametros = {
+                    "email": correo,
+                    "password": clave,
+                    "hidden": "1"
+                };
+                $.ajax({
+                    data: parametros,
+                    url: "Login",
+                    type: "GET"
+
+                }).done(function (response) {
+                    var str1 = "admin";
+                    var str2 = "profesor";
+                    var ad = str1.localeCompare(response);
+                    var prof = str2.localeCompare(response);
+                    if (ad === 0) {
+                        document.location.href = "index.htm";
+                    } else if (prof === 0) {
+                        document.location.href = "perfil_profesor.jsp";
+                    } else {
+                        alert(response);
+                    }
+                });
+            };
+        </script>
         <div class="container-fluid text-center">    
             <div class="row content">
                 <div class="col-sm-2 sidenav">
@@ -33,7 +61,7 @@
                                 <label for="nombre">Contrasena:</label>
                                 <input  class="form-control" name="contrasena">
                             </div>
-                            <button type="submit" class="btn btn-default" name="Enviar">Ingresar</button>
+                            <button class="fr" onclick="iniciarsesion($('#email').val(), $('#clave').val())">Ingresar</button>
                         </form>
                     </div>
                     
